@@ -4,6 +4,8 @@ import { useContext } from 'react';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import CreatePostPage from './pages/CreatePostPage';
+import PostDetailPage from './pages/PostDetailPage'; // <-- Thêm dòng này
+
 
 function App() {
   const { user, logout } = useContext(AuthContext);
@@ -29,6 +31,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/create-post" element={<CreatePostPage />} />
+        <Route path="/post/:id" element={<PostDetailPage />} />
       </Routes>
     </div>
   );
