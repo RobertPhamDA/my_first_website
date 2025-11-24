@@ -5,6 +5,8 @@ import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import CreatePostPage from './pages/CreatePostPage';
 import PostDetailPage from './pages/PostDetailPage'; // <-- Thêm dòng này
+import RegisterPage from './pages/RegisterPage'; // <-- Thêm dòng này
+
 
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/create-post" element={<CreatePostPage />} />
         <Route path="/post/:id" element={<PostDetailPage />} />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </div>
   );
